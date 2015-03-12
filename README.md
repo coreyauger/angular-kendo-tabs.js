@@ -12,10 +12,9 @@ Here is a angular directive that helps create <a target='_blank' href='http://ke
    var tabStrip = $("#tabstripContent").kendoTabStrip().data("kendoTabStrip");
    var tabInstance = $kTab.open({
                         tabStrip: tabStrip,
-                        modal: true,
-                        title: "Window title",
-                        templateUrl: 'modal1.html',
-                        controller: 'modalController',
+                        title: "Tab title",
+                        templateUrl: 'tab1.html',
+                        controller: 'tabController',
                         resolve: {
                             parameter1: function () {
                                 return "Test...";
